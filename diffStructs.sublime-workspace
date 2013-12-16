@@ -1,0 +1,330 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pla",
+				"player1"
+			],
+			[
+				"p",
+				"player2"
+			],
+			[
+				"sa",
+				"saveSettingsToFile"
+			],
+			[
+				"lo",
+				"loadSettingsFromFile"
+			],
+			[
+				"en",
+				"endGame"
+			],
+			[
+				"fi",
+				"fileSettings"
+			],
+			[
+				"play",
+				"player2_point"
+			],
+			[
+				"se",
+				"settings"
+			],
+			[
+				"Se",
+				"settingsRecord"
+			],
+			[
+				"pl",
+				"player1_name"
+			],
+			[
+				"po",
+				"player1_point"
+			],
+			[
+				"Int",
+				"IntToStr"
+			],
+			[
+				"pra",
+				"player1_name"
+			],
+			[
+				"s",
+				"start"
+			],
+			[
+				"t",
+				"t"
+			],
+			[
+				"an",
+				"angle"
+			],
+			[
+				"sta",
+				"start_time"
+			],
+			[
+				"ba",
+				"ballVector"
+			],
+			[
+				"pos",
+				"position2"
+			],
+			[
+				"res",
+				"ResetBall"
+			],
+			[
+				"y",
+				"y"
+			],
+			[
+				"ball",
+				"ballVector"
+			],
+			[
+				"key",
+				"keyboardpress"
+			],
+			[
+				"ke",
+				"keyboardpress"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.pas",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "unit"
+			}
+		},
+		{
+			"file": "lists.pas",
+			"settings":
+			{
+				"buffer_size": 23,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/pablo/Projects/pong/settings.pong",
+		"/home/pablo/Projects/pong/main.pas",
+		"/home/pablo/Projects/pong/glut_function.pas"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"make",
+			" \n",
+			">=",
+			"		  	if keyboardpress[97] then\n		  		position1 := position1 + 0.5;\n\n		  	if keyboardpress[108] then\n		  		position2 := position2 + 0.5;"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.pas",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "unit",
+							"syntax": "Packages/Pascal/Pascal.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "lists.pas",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23,
+								23
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Pascal/Pascal.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "diffStructs.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Projects/pong/pong.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 195.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
