@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"E",
+				"PtrElementUniList"
+			],
+			[
+				"new",
+				"newElement"
+			],
+			[
+				"ne",
+				"next"
+			],
+			[
+				"va",
+				"val"
+			],
+			[
 				"pla",
 				"player1"
 			],
@@ -113,10 +129,10 @@
 			}
 		},
 		{
-			"file": "lists.pas",
+			"file": "listsUnidirectional.pas",
 			"settings":
 			{
-				"buffer_size": 23,
+				"buffer_size": 1588,
 				"line_ending": "Unix"
 			}
 		}
@@ -154,7 +170,7 @@
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -218,23 +234,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "lists.pas",
+					"file": "listsUnidirectional.pas",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 23,
+						"buffer_size": 1588,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								23,
-								23
+								1587,
+								1588
 							]
 						],
 						"settings":
@@ -242,9 +259,10 @@
 							"syntax": "Packages/Pascal/Pascal.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 57.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -252,11 +270,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 25.0
+		"height": 27.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 33.0
 	},
 	"layout":
 	{
@@ -281,10 +299,14 @@
 		]
 	},
 	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
 	"project": "diffStructs.sublime-project",
 	"replace":
 	{
-		"height": 46.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
