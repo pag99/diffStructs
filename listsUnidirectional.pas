@@ -14,23 +14,23 @@ INTERFACE
 		PtrElementUniList = ^ElementUniList;
 
 		ElementUniList = record
-			val: integer;
+			val: longint;
 			next: PtrElementUniList;
 		end;
 
 
-		procedure addElementUniList(var head: PtrElementUniList; newVal: integer);
+		procedure addElementUniList(var head: PtrElementUniList; newVal: longint);
 
-		procedure removeElementUniList(var head: PtrElementUniList; Val: integer);
+		procedure removeElementUniList(var head: PtrElementUniList; Val: longint);
 
-		function findElementUniList(var head: PtrElementUniList; Val: integer):boolean;
+		function findElementUniList(var head: PtrElementUniList; Val: longint):boolean;
 
 IMPLEMENTATION
 
 {**
  * Add one element to list
  *}
-		procedure addElementUniList(var head: PtrElementUniList; newVal: integer);
+		procedure addElementUniList(var head: PtrElementUniList; newVal: longint);
 			var
 				newElement, temp: PtrElementUniList;
 			begin
@@ -51,11 +51,11 @@ IMPLEMENTATION
 						
 						temp := head;
 						
-						while ((temp^.next <> NIL) OR (temp^.next^.val < newVal)) do
+						while ((temp^.next <> NIL) AND (temp^.next^.val < newVal)) do
 							begin
 								temp := temp^.next;
 							end;
-
+						
 						newElement^.next 	:= temp^.next;
 						temp^.next 			:= newElement;
 					end;
@@ -67,48 +67,52 @@ IMPLEMENTATION
  * Remove one element from list
  *}
 
-		procedure removeElementUniList(var head: PtrElementUniList; Val: integer);
+		procedure removeElementUniList(var head: PtrElementUniList; Val: longint);
 			var
 				temp, temp2: PtrElementUniList;				
 			begin
-				temp := head;
+				temp := head;	
 				if temp^.val = Val then
 					begin
 						head := temp^.next;
 						dispose(temp);
 					end
 				else
-					while ((temp^.next <> NIL) OR (temp^.next^.val = Val)) do
-						begin
-							temp2 := temp^.next;
-							temp^.next := temp2^.next;
-							dispose(temp2);
-						end; 
+					begin
+						while ((temp^.next <> NIL) AND (temp^.next^.val <> Val)) do
+							begin
+								temp := temp^.next;
+							end; 
+						
+						if ((temp^.next <> NIL) AND (temp^.next^.val = Val)) then
+							begin
+								temp2 := temp^.next;
+								temp^.next := temp2^.next;
+								dispose(temp2);
+							end;
+					end;
 			end;
 
 {**
  * Find element in list
  *}
-		function findElementUniList(var head: PtrElementUniList; Val: integer):boolean;
+		function findElementUniList(var head: PtrElementUniList; Val: longint):boolean;
 			var
 				temp: PtrElementUniList;
 			begin
-				if head^.val = Val then
-					findElementUniList := TRUE
-				else
-					begin
-						temp := head;				
-						while temp^.next <> NIL do
-							begin
-								temp := temp^.next;
 
-								if temp^.val = Val then
-									findElementUniList := TRUE;
-
-							end;
-					end;
-
+				temp := head;	
+				
 				findElementUniList := FALSE;
+				
+				while temp <> NIL do
+					begin
+						if temp^.val = Val then
+							begin
+								findElementUniList := TRUE;
+							end;
+						temp := temp^.next;
+					end;
 			end;
 
 
