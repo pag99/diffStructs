@@ -59,7 +59,6 @@ IMPLEMENTATION
 						newElement^.next 	:= temp^.next;
 						temp^.next 			:= newElement;
 					end;
-
 			end;
 
 

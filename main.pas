@@ -1,20 +1,28 @@
-uses listsUnidirectional, Crt;
+uses listsUnidirectional, listsBidirectional, Crt;
 
 var 
-	head,temp : PtrElementUniList;
+	head,temp : PtrElementBiList;
 	count,i : longint;
 
 begin
 	writeln('testing...');
 	readln(count);
 	head := NIL;
-	for i:= 1 to count do
-		addElementUniList(head, i);
 
+	for i:= 1 to count do
+	begin
+
+		addElementBiList(head, i);
+
+	end;
+	
 	temp := head;
+
+	writeln('added');
 
 	while temp <> NIL do
 		begin
+
 			writeln(temp^.val);
 			temp := temp^.next;
 		end;
@@ -22,9 +30,9 @@ begin
 	writeln('Find element');
 		readln(count);
 
-	if findElementUniList(head, count) = TRUE then
+	if findElementBiList(head, count) = TRUE then
 		begin
-			removeElementUniList(head,count);
+			removeElementBiList(head,count);
 			writeln('remove');
 		end
 	else
