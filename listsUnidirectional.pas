@@ -1,7 +1,7 @@
 UNIT listsUnidirectional;
 
 {**
- *  List unidirectional (with sort from min to max value)
+ *List unidirectional (with sort from min to max value)
  *
  * 	In one element of list is only one integer 
  * 	(make this to check speed witch struct is faster)
